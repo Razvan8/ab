@@ -1,0 +1,43 @@
+
+1)    head chipotle.tsv
+    tail chipotle.tsv
+
+2)There are 1834 orders (since 1834 is the highest order_id number).
+3)The file has 4623 lines. (wc -l chipotle.tsv)
+
+ 4) Chicken burritos are more popular than steak burritos.
+
+    grep -i 'chicken burrito' chipotle.tsv | wc -l with grep -i 'steak burrito' chipotle.tsv | wc -l
+   
+5)Black beans are more popular than pinto beans (on chicken burritos).
+
+    grep -i 'chicken burrito' chipotle.tsv | grep -i 'black beans' | wc -l with grep -i 'chicken burrito' chipotle.tsv | grep -i 'pinto beans' | wc -l
+
+
+6)At the moment, the CSV and TSV files in the DAT8 repo are 
+./data/airlines.csv
+./data/bank-additional.csv
+./data/bikeshare.csv
+./data/chipotle.tsv
+./data/Chiptole.tsv
+./data/drinks.csv
+./data/hitters.csv
+./data/imdb_1000.csv
+./data/sms.tsv
+./data/titanic.csv
+./data/ufo.csv
+./data/vehicles_test.csv
+./data/vehicles_train.csv
+./data/yelp.csv 
+
+7)    Change your working directory to DAT8, and then use find . -name *.?sv
+
+At the moment, there are 13 lines in DAT8 files that contain the word 'dictionary', which is a good approximation of the number of occurrences.
+
+8)    Change your working directory to DAT8, and then use grep -ir 'dictionary' . | wc -l
+    Alternatively, use the 'c' option of grep to skip the piping step: grep -irc 'dictionary' .
+
+
+
+
+
